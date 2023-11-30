@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <title>Моё портфолио</title>
+  <style>
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    .search input {
+      padding: 5px;
+    }
+
+    .search button {
+      padding: 5px 10px;
+      background-color: #000;
+      color: white;
+      border: none;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section h2 {
+      color: #333;
+    }
+
+    .social-links a {
+      margin-right: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+
+    td.weekend {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://noo.by/images/Novisti/calendar_icon_890.jpg" alt="Логотип">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#about-us">О себе</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#schedule">Расписание работы</a></li>
+        <li><a href="#calendar">Календарь</a></li>
+        <li><a href="#visit">Я мечтаю посетить</a></li>
+      </ul>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Поиск...">
+      <button>Найти</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="about-us" class="about-us">
+      <h2>О себе</h2>
+      <p>Меня зовут Виктор и я учусь программированию в HTML.</p>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Услуги</h2>
+      <ul>
+        <li>Услуга 1</li>
+        <li>Услуга 2</li>
+        <li>Услуга 3</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Контакты</h2>
+      <p>Адрес: Республика Крым, г. Ялта, ул. Примерная, д. 123</p>
+      <p>Телефон: +7 (987) 654-32-10</p>
+      <p>Email: info@example.com</p>
+      <div class="social-links">
+        <a href="https://dzen.ru/id/65428412a8341021132d069d">Дзен</a>
+        <a href="#">Telegram</a>
+        <a href="#">VK</a>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <h2>Расписание работы</h2>
+      <table>
+        <tr>
+          <th>День недели</th>
+          <th>Время работы</th>
+        </tr>
+        <tr>
+          <td>Понедельник</td>
+          <td>15:00 - 23:00</td>
+        </tr>
+        <tr>
+          <td>Вторник</td>
+          <td>15:00 - 23:00</td>
+        </tr>
+        <tr>
+          <td>Среда</td>
+          <td>15:00 - 23:00</td>
+        </tr>
+        <tr>
+          <td>Четверг</td>
+          <td>15:00 - 23:00</td>
+        </tr>
+        <tr>
+          <td>Пятница</td>
+          <td>15:00 - 23:00</td>
+        </tr>
+        <tr>
+          <td>Суббота</td>
+          <td>12:00 - 23:00</td>
+        </tr>
+        <tr>
+          <td class="weekend">Воскресенье</td>
+          <td class="weekend">Выходной</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="calendar" class="calendar">
+    <h2>Календарь на текущий месяц</h2>
+      <table>
+        <tr>
+          <th>Пн</th>
+          <th>Вт</th>
+          <th>Ср</th>
+          <th>Чт</th>
+          <th>Пт</th>
+          <th class="weekend">Сб</th>
+          <th class="weekend">Вс</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td class="weekend">4</td>
+          <td class="weekend">5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td class="weekend">11</td>
+          <td class="weekend">12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td class="weekend">18</td>
+          <td class="weekend">19</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td class="weekend">25</td>
+          <td class="weekend">26</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td></td>
+          <td class="weekend"></td>
+          <td class="weekend"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="visit" class="visit">
+    <h2>Я мечтаю посетить</h2>
+    <div id="paris">
+      <h3>Париж, Франция</h3>
+      <p>Романтический город с богатой историей, известный своими знаменитыми достопримечательностями, такими как Эйфелева башня и Лувр.</p>
+        <h4>Достопримечательности Парижа:</h4>
+      <ul>
+        <li>Эйфелева башня
+          <br>
+          <img src="https://paris-excursions.ru/images1/Эйфелева-башня.jpg" alt="Eiffel Tower" width="300" height="200">
+        </li>
+        <li>Площадь Трокадеро
+          <br>
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/5233237/pub_624f07bf31d5310840093f67_624f0aadc3c38f063173c182/scale_1200" alt="Trocadero" width="300" height="200">
+        </li>
+        <li>Лувр
+          <br>
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/5285343/pub_624f07bf31d5310840093f67_624f0ae59b6e9a5d70ec3564/scale_1200" alt="Louvre" width="300" height="200">
+        </li>
+      </ul>
+    </div>
+
+    <div id="tokyo">
+      <h3>Токио, Япония</h3>
+      <p>Современный город, где традиционная японская культура соседствует с высокими технологиями и уникальным стилем жизни.</p>
+            <h4>Достопримечательности Токио:</h4>
+      <ul>
+        <li>Башня «Токио Скайтри»
+          <br>
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/2746214/pub_6009a3a59444cb7e98b3d792_6041297f1bd4ca0508bc2cfd/scale_1200" alt="Tokyo Skytree" width="300" height="200">
+        </li>
+        <li>Район Синдзюку
+          <br>
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/3957666/pub_6009a3a59444cb7e98b3d792_604213fc58285736dd77fca1/scale_1200" alt="Asakusa" width="300" height="200">
+        </li>
+        <li>Район Акихабара
+          <br>
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/4078437/pub_6009a3a59444cb7e98b3d792_604234bf44edc666817fc84d/scale_1200" alt="Akihabara" width="300" height="200">
+        </li>
+      </ul>
+    </div>
+
+    <div id="losangeles">
+      <h3>Лос-Анджелес, США</h3>
+      <p>Город ангелов, известный своими знаменитостями, Голливудом, пляжами и культурным разнообразием.</p>
+      <h4>Достопримечательности Лос-Анджелеса:</h4>
+      <ul>
+        <li>Голливудская «Аллея славы»
+          <br>
+          <img src="https://www.shkolazhizni.ru/img/content/i201/201809_or.jpg" alt="Hollywood Boulevard" width="300" height="200">
+        </li>
+        <li>Пирс Санта-Моника
+          <br>
+          <img src="https://tripplanet.ru/wp-content/uploads/america/usa/los-angeles/santa-monica-pier.jpg" alt="Santa Monica Pier" width="300" height="200">
+        </li>
+        <li>Знак Голливуда
+          <br>
+          <img src="https://tripplanet.ru/wp-content/uploads/america/usa/los-angeles/hollywood-sign.jpg" alt="Hollywood Sign" width="300" height="200">
+        </li>
+      </ul>
+      <h4>Пляжи Лос-Анджелеса:</h4>
+      <ol>
+        <li>Венис Бич
+          <br>
+          <img src="https://s.zagranitsa.com/images/articles/5058/870x486/479380a71a8d2840e97999a638d52f7d.jpg?1480422348" alt="Venice Beach" width="300" height="200">
+        </li>
+        <li>Малибу
+          <br>
+          <img src="https://blogweb-static.fra1.cdn.digitaloceanspaces.com/images/87a4c0a8-5403-4f6c-89d6-86902b026ac8/blog/7fd216f9b0b1ce620c4141787417eec2395bbe33.jpg" alt="Malibu" width="300" height="200">
+        </li>
+        <li>Санта-Моника
+          <br>
+          <img src="https://s.zagranitsa.com/images/articles/5058/870x486/68dbccc079669f7c189e8376bd79fd8c.jpg?1480422384" alt="Santa Monica Beach" width="300" height="200">
+        </li>
+      </ol>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Моя веб-страница. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
